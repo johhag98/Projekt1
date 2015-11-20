@@ -24,7 +24,7 @@ namespace scr
             string text1 = tbxTal1.Text;
             int tal1;
             bool test1 = int.TryParse(text1, out tal1);
-            
+
             string text2 = tbxTal2.Text;
             int tal2;
             bool test2 = int.TryParse(text2, out tal2);
@@ -42,10 +42,10 @@ namespace scr
             bool test5 = int.TryParse(text5, out tal5);
 
             //Kolla om någon bool är false.
-            if (test1 == false || test2 == false || test3 == false || test4 == false || test5 == false)             
+            if (test1 == false || test2 == false || test3 == false || test4 == false || test5 == false)
             {
                 //Om någon bool är false öppnas en messagebox.
-                MessageBox.Show("Du måste skriva in ett heltal!", "Medelande",MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Du måste skriva in fem heltal!", "Medelande",MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
             //För att Lägga alla tal i en array och välja ut det största talet.
