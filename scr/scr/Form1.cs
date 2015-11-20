@@ -42,7 +42,7 @@ namespace scr
 
             if (test1 == false || test2 == false || test3 == false || test4 == false || test5 == false)
             {
-                MessageBox.Show("Du måste skriva in ett heltal!", "Medelande",MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Du måste skriva in fem heltal!", "Medelande",MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
             int[] array1 = { tal1, tal2, tal3, tal4, tal5 };
