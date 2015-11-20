@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace scr
 {
     public partial class Form1 : Form
@@ -44,9 +45,11 @@ namespace scr
                 MessageBox.Show("Du måste skriva in ett heltal grabben!", "Medelande",MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
+            int[] array1 = { tal1, tal2, tal3, tal4, tal5 };
+            int max = array1.Max();
 
-
-
+            lblAns.Text = "Svar: " + max; 
+            
 
         }
     }
