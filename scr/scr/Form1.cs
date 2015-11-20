@@ -19,7 +19,7 @@ namespace scr
 
         private void btnGo_Click(object sender, EventArgs e)
         {
-
+            int tal1 = int.Parse(tbxTal1.Text);
         }
     }
 }
