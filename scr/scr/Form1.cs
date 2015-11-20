@@ -19,11 +19,33 @@ namespace scr
 
         private void btnGo_Click(object sender, EventArgs e)
         {
-            int tal1 = int.Parse(tbxTal1.Text);
-            int tal2 = int.Parse(tbxTal2.Text);
-            int tal3 = int.Parse(tbxTal3.Text);
-            int tal4 = int.Parse(tbxTal4.Text);
-            int tal5 = int.Parse(tbxTal5.Text);
+            string text1 = tbxTal1.Text;
+            int tal1;
+            bool test1 = int.TryParse(text1, out tal1);
+
+            string text2 = tbxTal2.Text;
+            int tal2;
+            bool test2 = int.TryParse(text2, out tal2);
+
+            string text3 = tbxTal3.Text;
+            int tal3;
+            bool test3 = int.TryParse(text3, out tal3);
+
+            string text4 = tbxTal4.Text;
+            int tal4;
+            bool test4 = int.TryParse(text4, out tal4);
+
+            string text5 = tbxTal5.Text;
+            int tal5;
+            bool test5 = int.TryParse(text5, out tal5);
+
+            if (test1 == false || test2 == false || test3 == false || test4 == false || test5 == false)
+            {
+                MessageBox.Show("Du måste skriva in ett heltal grabben!", "Medelande",MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+
+
 
 
         }
