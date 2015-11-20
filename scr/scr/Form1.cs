@@ -16,5 +16,10 @@ namespace scr
         {
             InitializeComponent();
         }
+
+        private void btnGo_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
